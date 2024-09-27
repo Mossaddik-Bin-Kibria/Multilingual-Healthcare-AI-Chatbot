@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colorful Chatbot Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-window">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-button">Send</button>
+        </div>
+        <div class="upload-area">
+            <h3>Upload a Document</h3>
+            <input type="file" id="document-input">
+            <button id="upload-document-button">Upload Document</button>
+        </div>
+        <div class="upload-area">
+            <h3>Upload an Image</h3>
+            <input type="file" id="image-input">
+            <button id="upload-image-button">Upload Image</button>
+        </div>
+        <div class="uploaded-files">
+          <h3>Uploaded Files</h3>
+          <div id="uploaded-files-list">
+              <!-- Uploaded files will be displayed here -->
+          </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
